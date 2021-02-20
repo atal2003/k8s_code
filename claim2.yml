@@ -1,0 +1,22 @@
+apiVersion: v1
+
+kind: PersistentVolumeClaim
+
+metadata:
+
+ name: mypvc2
+
+
+spec:
+
+ accessModes:
+
+ - ReadWriteOnce
+
+ resources:
+
+   requests:
+
+     storage: 30Gi
+
+ storageClassName: fast
